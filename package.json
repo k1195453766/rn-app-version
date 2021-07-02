@@ -1,7 +1,6 @@
-
 {
   "name": "rn-app-version",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -20,7 +19,7 @@
     "app"
   ],
   "author": {
-    "name":"JunQiu",
+    "name": "JunQiu",
     "email": "wangkai@sdchina.com"
   },
   "license": "MIT",
