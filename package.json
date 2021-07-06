@@ -1,6 +1,6 @@
 {
   "name": "rn-app-version",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,6 @@
   "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.59.2"
-  }
+  },
+  "ps":"最新版本以github为准"
 }

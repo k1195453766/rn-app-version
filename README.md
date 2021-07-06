@@ -40,6 +40,8 @@
 import RNAppVersion from 'rn-app-version';
 
 // TODO: What to do with the module?
-RNAppVersion;
+RNAppVersion.getVersion(res=>{
+	console.log(res)
+});
 ```
   
