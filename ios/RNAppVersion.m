@@ -1,13 +1,20 @@
 
 #import "RNAppVersion.h"
+//解决Implicit declaration of function 'callback' is invalid in C99问题
+//https://blog.csdn.net/a308843141/article/details/49926799
+#import "objc/runtime.h"
 
 @implementation RNAppVersion
 
-- (dispatch_queue_t)methodQueue
+
+RCT_EXPORT_MODULE();
+
+RCT_EXPORT_METHOD(getVersion:(RCTResponseSenderBlock)callback)
 {
-    return dispatch_get_main_queue();
-}
-RCT_EXPORT_MODULE()
+    NSString *version = [[[NSBundle mainBundle] infoDictionary]
+                         objectForKey:@"CFBundleShortVersionString"];//获取项目版本号
+    callback(@[[NSString stringWithFormat:@"%@",version]]);
+};
 
 @end
   
